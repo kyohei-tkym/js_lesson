@@ -1,11 +1,15 @@
+const fizzBuzz = (x) => {
+    if(x % 15 === 0){
+        return 'FizzBuzz';
+    } else if (x % 5 === 0){
+        return 'Buzz';
+    } else if (x % 3 === 0){
+        return 'Fizz';
+    } else{
+        return x;
+    }
+}
 
-for (let x = 1; x < 100; x++) {
-    if(x % 15 === 0)
-        console.log('Fizz Buzz');
-    else if(x % 3 === 0)
-        console.log('Fizz');
-    else if(x % 5 === 0)
-        console.log('Buzz');
-    else
-        console.log(x)
+for (let i = 1; i <= 100; i++){
+    console.log(fizzBuzz(i));
 }
